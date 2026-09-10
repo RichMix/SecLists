@@ -4929,6 +4929,7 @@ dev/tests/integration/testsuite/Magento/Framework/MessageQueue/UseCase/WaitAndNo
 dev/tests/integration/testsuite/Magento/Framework/MessageQueue/UseCase/AsyncMultipleTopicsWithEachQueueTest.php
 dev/tests/integration/testsuite/Magento/Framework/MessageQueue/UseCase/RpcCommunicationTest.php
 dev/tests/integration/testsuite/Magento/Framework/MessageQueue/UseCase/RemoteServiceCommunicationTest.php
+dev/tests/integration/testsuite/Magento/Framework/MessageQueue/ReadonlyMessage.php
 dev/tests/integration/testsuite/Magento/Framework/MessageQueue/ConfigTest.php
 dev/tests/integration/testsuite/Magento/Framework/MessageQueue/_files/valid_queue_input.php
 dev/tests/integration/testsuite/Magento/Framework/MessageQueue/_files/valid_expected_queue.php
@@ -8715,6 +8716,7 @@ app/code/Magento/Store/Test/Mftf/Test/AdminCreateStoreGroupWithCustomWebsiteAndR
 app/code/Magento/Store/Test/Mftf/Test/AdminCreateCustomStoreViewStatusEnabledVerifyBackendAndFrontendTest.xml
 app/code/Magento/Store/Test/Mftf/Test/AdminCreateCustomStoreViewStatusDisabledVerifyErrorSaveMessageTest.xml
 app/code/Magento/Store/Test/Mftf/Test/AdminDeleteDefaultStoreViewTest.xml
+app/code/Magento/Store/Test/Mftf/Test/StorefrontSwitchStoreActionWithNonExistentStoreCodeTest.xml
 app/code/Magento/Store/Test/Mftf/Test/StorefrontAddStoreCodeInUrlTest.xml
 app/code/Magento/Store/Test/Mftf/Test/AdminUpdateWebsiteTest.xml
 app/code/Magento/Store/Test/Mftf/Test/StorefrontCheckSortOrderStoreViewTest.xml
@@ -8917,6 +8919,8 @@ app/code/Magento/CmsGraphQl/etc/graphql/di.xml
 app/code/Magento/CmsGraphQl/etc/schema.graphqls
 app/code/Magento/CmsGraphQl/etc/module.xml
 app/code/Magento/CmsGraphQl/README.md
+app/code/Magento/CmsGraphQl/Test/Unit/Model/Resolver/PageTest.php
+app/code/Magento/CmsGraphQl/Test/Unit/Model/Resolver/DataProvider/PageTest.php
 app/code/Magento/CmsGraphQl/Test/Integration/Model/Resolver/PageTest.php
 app/code/Magento/CmsGraphQl/registration.php
 app/code/Magento/CmsGraphQl/composer.json
@@ -10760,6 +10764,7 @@ app/code/Magento/ProductAlert/Test/Unit/Block/Product/View/PriceTest.php
 app/code/Magento/ProductAlert/Test/Unit/Block/Product/ViewTest.php
 app/code/Magento/ProductAlert/Test/Unit/Model/ObserverTest.php
 app/code/Magento/ProductAlert/Test/Unit/Model/UpdateThemeParamsTest.php
+app/code/Magento/ProductAlert/Test/Unit/Model/EmailTest.php
 app/code/Magento/ProductAlert/Test/Fixture/StockAlert.php
 app/code/Magento/ProductAlert/Test/Fixture/PriceAlert.php
 app/code/Magento/ProductAlert/Test/Mftf/LICENSE_AFL.txt
@@ -11081,6 +11086,7 @@ app/code/Magento/CmsUrlRewriteGraphQl/etc/schema.graphqls
 app/code/Magento/CmsUrlRewriteGraphQl/etc/module.xml
 app/code/Magento/CmsUrlRewriteGraphQl/README.md
 app/code/Magento/CmsUrlRewriteGraphQl/Test/Unit/Model/Resolver/UrlRewrite/HomePageUrlLocatorTest.php
+app/code/Magento/CmsUrlRewriteGraphQl/Test/Unit/Model/DataProvider/UrlRewrite/PageTest.php
 app/code/Magento/CmsUrlRewriteGraphQl/Test/Mftf/README.md
 app/code/Magento/CmsUrlRewriteGraphQl/registration.php
 app/code/Magento/CmsUrlRewriteGraphQl/composer.json
@@ -13037,6 +13043,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/AdminUpdateVirtualProductWithTierPriceOu
 app/code/Magento/Catalog/Test/Mftf/Test/StorefrontAdvanceCatalogSearchSimpleProductBySkuWithHyphenTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/SpecialPriceCheckOnWishListPageTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCheckCustomAttributeValuesAfterProductSaveTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/AdminDateAttributeDatepickerPositionOnProductEditTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminAttributeLabelsValueDisplayOnMultipleStoreViewsTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCatalogCategoriesNavigateMenuTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateProductAttributeTextSwatchFromProductPageTest.xml
@@ -16539,6 +16546,7 @@ app/code/Magento/QuoteAnalytics/etc/reports.xml
 app/code/Magento/QuoteAnalytics/etc/module.xml
 app/code/Magento/QuoteAnalytics/README.md
 app/code/Magento/QuoteAnalytics/LICENSE.txt
+app/code/Magento/QuoteAnalytics/Test/Integration/ReportXml/ReportProviderTest.php
 app/code/Magento/QuoteAnalytics/Test/Mftf/LICENSE_AFL.txt
 app/code/Magento/QuoteAnalytics/Test/Mftf/README.md
 app/code/Magento/QuoteAnalytics/Test/Mftf/LICENSE.txt
@@ -18863,6 +18871,7 @@ app/code/Magento/Review/view/adminhtml/layout/catalog_product_new.xml
 app/code/Magento/Review/view/adminhtml/layout/rating_block.xml
 app/code/Magento/Review/view/adminhtml/ui_component/review_listing.xml
 app/code/Magento/Review/view/adminhtml/web/js/rating.js
+app/code/Magento/Review/view/adminhtml/web/js/new-review.js
 app/code/Magento/Review/view/base/ui_component/customer_form.xml
 app/code/Magento/Review/view/frontend/templates/customer/view.phtml
 app/code/Magento/Review/view/frontend/templates/customer/recent.phtml
@@ -20645,10 +20654,12 @@ app/code/Magento/CatalogGraphQl/etc/module.xml
 app/code/Magento/CatalogGraphQl/README.md
 app/code/Magento/CatalogGraphQl/Test/Unit/DataProvider/Product/LayeredNavigation/Builder/AttributeTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/DataProvider/Product/SearchCriteriaBuilderTest.php
+app/code/Magento/CatalogGraphQl/Test/Unit/Plugin/DataProvider/Product/SearchCriteriaBuilderPluginTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/Model/Config/FilterAttributeReaderTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/Model/Resolver/Category/DepthCalculatorTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/Model/Resolver/Category/ImageTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/Model/Resolver/CategoriesTests.php
+app/code/Magento/CatalogGraphQl/Test/Unit/Model/Resolver/ProductTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/Model/Resolver/Products/Query/SearchTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/Model/Resolver/Products/SearchCriteria/CollectionProcessor/FilterProcessor/CategoryFilterTest.php
 app/code/Magento/CatalogGraphQl/Test/Unit/Model/Resolver/Product/ProductCategoriesTest.php
@@ -20675,6 +20686,7 @@ app/code/Magento/CatalogGraphQl/Plugin/DesignLoader.php
 app/code/Magento/CatalogGraphQl/Plugin/Search/Request/ConfigReader.php
 app/code/Magento/CatalogGraphQl/Plugin/Search/RequestBuilderPlugin.php
 app/code/Magento/CatalogGraphQl/Plugin/ProductAttributeSortInput.php
+app/code/Magento/CatalogGraphQl/Plugin/DataProvider/Product/SearchCriteriaBuilderPlugin.php
 app/code/Magento/CatalogGraphQl/Plugin/AvailableProductsFilter.php
 app/code/Magento/CatalogGraphQl/composer.json
 app/code/Magento/CatalogGraphQl/Model/ProductInterfaceTypeResolverComposite.php
@@ -22735,6 +22747,7 @@ app/code/Magento/SalesAnalytics/etc/reports.xml
 app/code/Magento/SalesAnalytics/etc/module.xml
 app/code/Magento/SalesAnalytics/README.md
 app/code/Magento/SalesAnalytics/LICENSE.txt
+app/code/Magento/SalesAnalytics/Test/Integration/ReportXml/ReportProviderTest.php
 app/code/Magento/SalesAnalytics/Test/Mftf/LICENSE_AFL.txt
 app/code/Magento/SalesAnalytics/Test/Mftf/README.md
 app/code/Magento/SalesAnalytics/Test/Mftf/LICENSE.txt
@@ -23670,6 +23683,7 @@ app/code/Magento/Checkout/Test/Unit/Model/Config/Source/Cart/SummaryTest.php
 app/code/Magento/Checkout/Test/Unit/Model/GuestShippingInformationManagementTest.php
 app/code/Magento/Checkout/Test/Unit/Model/SidebarTest.php
 app/code/Magento/Checkout/Test/Unit/Model/Type/OnepageTest.php
+app/code/Magento/Checkout/Test/Unit/Model/Cart/AjaxMessageResponseTest.php
 app/code/Magento/Checkout/Test/Unit/Model/Cart/RequestInfoFilterTest.php
 app/code/Magento/Checkout/Test/Unit/Model/Cart/CollectQuoteTest.php
 app/code/Magento/Checkout/Test/Unit/Model/Cart/RequestInfoFilterCompositeTest.php
@@ -24321,6 +24335,7 @@ app/code/Magento/Checkout/Model/Cart/CheckoutSummaryConfigProvider.php
 app/code/Magento/Checkout/Model/Cart/CollectQuote.php
 app/code/Magento/Checkout/Model/Cart/RequestInfoFilterComposite.php
 app/code/Magento/Checkout/Model/Cart/RequestInfoFilterInterface.php
+app/code/Magento/Checkout/Model/Cart/AjaxMessageResponse.php
 app/code/Magento/Checkout/Model/Cart/RequestQuantityProcessor.php
 app/code/Magento/Checkout/Model/Cart/RequestInfoFilter.php
 app/code/Magento/Checkout/Model/CompositeConfigProvider.php
@@ -28047,6 +28062,7 @@ app/code/Magento/Sales/Test/Unit/Ui/Component/Listing/Column/PriceTest.php
 app/code/Magento/Sales/Test/Unit/Plugin/Webapi/OrderResponseNullKeysPluginTest.php
 app/code/Magento/Sales/Test/Unit/Plugin/CountryNameToCodeFilterTest.php
 app/code/Magento/Sales/Test/Unit/Plugin/Model/Export/OrderGridExportFilterColumnTest.php
+app/code/Magento/Sales/Test/Unit/Plugin/Model/ResourceModel/Order/Relation/AddExistingItemProductOptionsTest.php
 app/code/Magento/Sales/Test/Unit/Plugin/Model/OrderRepositoryPluginTest.php
 app/code/Magento/Sales/Test/Unit/Plugin/Model/Service/Invoice/AddTransactionCommentAfterCaptureTest.php
 app/code/Magento/Sales/Test/Unit/Model/CronJob/AggregateSalesReportOrderDataTest.php
@@ -29506,6 +29522,7 @@ app/code/Magento/CustomerGraphQl/Test/Unit/Plugin/Model/MergeGuestOrderTest.php
 app/code/Magento/CustomerGraphQl/Test/Unit/Model/GetGuestOrdersByEmailTest.php
 app/code/Magento/CustomerGraphQl/Test/Unit/Model/ValidatorExceptionProcessorTest.php
 app/code/Magento/CustomerGraphQl/Test/Unit/Model/Resolver/RevokeCustomerTokenTest.php
+app/code/Magento/CustomerGraphQl/Test/Unit/Model/Resolver/CacheKey/FactorProvider/CurrentWebsiteIdTest.php
 app/code/Magento/CustomerGraphQl/Test/Unit/Model/Resolver/Cache/Customer/ModelHydratorTest.php
 app/code/Magento/CustomerGraphQl/registration.php
 app/code/Magento/CustomerGraphQl/i18n/en_US.csv
@@ -29521,6 +29538,7 @@ app/code/Magento/CustomerGraphQl/Model/Resolver/CustomerAddressCustomAttributeFi
 app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/IsLoggedIn.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/CurrentCustomerId.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/CustomerGroup.php
+app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/CurrentWebsiteId.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/CacheKey/FactorProvider/CustomerTaxRate.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/RevokeCustomerToken.php
 app/code/Magento/CustomerGraphQl/Model/Resolver/DeleteCustomerAddress.php
@@ -30289,6 +30307,7 @@ app/code/Magento/CustomerAnalytics/etc/reports.xml
 app/code/Magento/CustomerAnalytics/etc/module.xml
 app/code/Magento/CustomerAnalytics/README.md
 app/code/Magento/CustomerAnalytics/LICENSE.txt
+app/code/Magento/CustomerAnalytics/Test/Integration/ReportXml/ReportProviderTest.php
 app/code/Magento/CustomerAnalytics/Test/Mftf/LICENSE_AFL.txt
 app/code/Magento/CustomerAnalytics/Test/Mftf/README.md
 app/code/Magento/CustomerAnalytics/Test/Mftf/LICENSE.txt
@@ -30299,6 +30318,7 @@ app/code/Magento/CatalogInventoryGraphQl/etc/graphql/di.xml
 app/code/Magento/CatalogInventoryGraphQl/etc/schema.graphqls
 app/code/Magento/CatalogInventoryGraphQl/etc/module.xml
 app/code/Magento/CatalogInventoryGraphQl/README.md
+app/code/Magento/CatalogInventoryGraphQl/Test/Unit/Model/Resolver/QuantityResolverTest.php
 app/code/Magento/CatalogInventoryGraphQl/Test/Unit/Model/Resolver/OnlyXLeftInStockResolverTest.php
 app/code/Magento/CatalogInventoryGraphQl/registration.php
 app/code/Magento/CatalogInventoryGraphQl/composer.json
@@ -30319,6 +30339,7 @@ app/code/Magento/QuoteGraphQl/README.md
 app/code/Magento/QuoteGraphQl/Test/Unit/Plugin/ShippingMethodValidationRulePluginTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Plugin/Quote/ValidatePaymentOnPlaceOrderTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Model/CartItem/ProductStockTest.php
+app/code/Magento/QuoteGraphQl/Test/Unit/Model/Cart/UpdateCartCurrencyTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Model/Cart/GetCartForCheckoutTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Model/Cart/SetPaymentMethodOnCartTest.php
 app/code/Magento/QuoteGraphQl/Test/Unit/Model/ErrorMapperTest.php
@@ -30459,6 +30480,10 @@ app/code/Magento/BundleGraphQl/etc/graphql/di.xml
 app/code/Magento/BundleGraphQl/etc/schema.graphqls
 app/code/Magento/BundleGraphQl/etc/module.xml
 app/code/Magento/BundleGraphQl/README.md
+app/code/Magento/BundleGraphQl/Test/Unit/Model/Resolver/PriceRangeTest.php
+app/code/Magento/BundleGraphQl/Test/Unit/Model/Resolver/Options/LabelTest.php
+app/code/Magento/BundleGraphQl/Test/Integration/Resolver/BundleProductWebsitePriceScopeTest.php
+app/code/Magento/BundleGraphQl/Test/Fixture/BundleSelectionWebsitePrice.php
 app/code/Magento/BundleGraphQl/Test/Mftf/README.md
 app/code/Magento/BundleGraphQl/registration.php
 app/code/Magento/BundleGraphQl/composer.json
@@ -31584,6 +31609,7 @@ app/code/Magento/Swatches/Test/Unit/Block/Adminhtml/Attribute/Edit/Options/Visua
 app/code/Magento/Swatches/Test/Unit/Block/Adminhtml/Product/Attribute/Edit/FormTest.php
 app/code/Magento/Swatches/Test/Unit/Block/Product/Renderer/Listing/ConfigurableTest.php
 app/code/Magento/Swatches/Test/Unit/Plugin/Catalog/CacheInvalidateTest.php
+app/code/Magento/Swatches/Test/Unit/Plugin/Eav/Model/Entity/Attribute/OptionManagementTest.php
 app/code/Magento/Swatches/Test/Unit/Model/AttributesListTest.php
 app/code/Magento/Swatches/Test/Unit/Model/ConvertSwatchAttributeFrontendInputTest.php
 app/code/Magento/Swatches/Test/Unit/Model/SwatchAttributeTypeTest.php
@@ -33509,6 +33535,7 @@ app/code/Magento/Customer/Test/Unit/Ui/Component/DataProvider/DocumentTest.php
 app/code/Magento/Customer/Test/Unit/Ui/Component/Form/AddressFieldsetTest.php
 app/code/Magento/Customer/Test/Unit/Plugin/ValidateDobOnSaveTest.php
 app/code/Magento/Customer/Test/Unit/Plugin/AsyncRequestCustomerGroupAuthorizationTest.php
+app/code/Magento/Customer/Test/Unit/Plugin/Ui/Component/Form/Element/DisableStoreViewWebsiteFilterTest.php
 app/code/Magento/Customer/Test/Unit/Plugin/Model/Group/RetrieverPluginTest.php
 app/code/Magento/Customer/Test/Unit/Plugin/Model/SessionPluginTest.php
 app/code/Magento/Customer/Test/Unit/Model/FileProcessorTest.php
@@ -34014,6 +34041,7 @@ app/code/Magento/Customer/Test/Mftf/Test/AdminUpdateCustomerTest/AdminUpdateCust
 app/code/Magento/Customer/Test/Mftf/Test/AdminUpdateCustomerTest/AdminDeleteCustomerAddressTest.xml
 app/code/Magento/Customer/Test/Mftf/Test/AdminUpdateCustomerTest/AdminUpdateCustomerInfoFromDefaultToNonDefaultTest.xml
 app/code/Magento/Customer/Test/Mftf/Test/AdminCreateTaxClassCustomerGroupTest.xml
+app/code/Magento/Customer/Test/Mftf/Test/StorefrontAddCustomerAddressWithInvalidCityTest.xml
 app/code/Magento/Customer/Test/Mftf/Test/AdminCreateCustomerWithPrefixTest.xml
 app/code/Magento/Customer/Test/Mftf/Test/StorefrontResetCustomerPasswordSuccessTest.xml
 app/code/Magento/Customer/Test/Mftf/Test/StorefrontLoginFormCheckDuplicateValidateMessageTest.xml
@@ -34276,6 +34304,7 @@ app/code/Magento/Customer/view/frontend/web/js/validation.js
 app/code/Magento/Customer/view/frontend/web/template/authentication-popup.html
 app/code/Magento/Customer/view/frontend/web/template/show-password.html
 app/code/Magento/Customer/Plugin/AsyncRequestCustomerGroupAuthorization.php
+app/code/Magento/Customer/Plugin/Ui/Component/Form/Element/DisableStoreViewWebsiteFilter.php
 app/code/Magento/Customer/Plugin/ValidateDobOnSave.php
 app/code/Magento/Customer/Plugin/Model/VatPlugin.php
 app/code/Magento/Customer/Plugin/Model/SessionPlugin.php
@@ -37644,6 +37673,7 @@ lib/internal/Magento/Framework/GraphQl/Type/Definition/IntType.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/QueryParserTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/FieldsTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/QueryDataFormatterTest.php
+lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/ErrorHandlerTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/EnumLookupTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/Resolver/PromiseFactoryTest.php
 lib/internal/Magento/Framework/GraphQl/Test/Unit/Query/Resolver/Argument/Validator/CompositeValidatorTest.php
@@ -38148,9 +38178,12 @@ lib/internal/Magento/Framework/Cache/Frontend/Decorator/Logger.php
 lib/internal/Magento/Framework/Cache/Frontend/Decorator/Profiler.php
 lib/internal/Magento/Framework/Cache/Frontend/Decorator/Bare.php
 lib/internal/Magento/Framework/Cache/Frontend/Decorator/TagScope.php
+lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony/RedisBase.php
+lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony/SlaveAwareRedis.php
 lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony/MagentoDatabaseAdapter.php
 lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony/LowLevelFrontend.php
 lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony/BackendWrapper.php
+lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony/IdentifierNormalizer.php
 lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony/LowLevelBackend.php
 lib/internal/Magento/Framework/Cache/Frontend/Adapter/Symfony.php
 lib/internal/Magento/Framework/Cache/Frontend/Adapter/PreloadingSymfonyAdapter.php
@@ -38174,6 +38207,7 @@ lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/Symfony/LowLevel
 lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/Symfony/LowLevelFrontendTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/Symfony/BackendWrapperTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/ZendTest.php
+lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/PreloadingSymfonyAdapterTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/SymfonyAdapters/FilesystemTagAdapterTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/SymfonyAdapters/RedisTagAdapterTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Frontend/Adapter/SymfonyAdapters/GenericTagAdapterTest.php
@@ -38320,9 +38354,11 @@ lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/ambiguous_new_one.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/cdata_html_new.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/ids_new.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/namespaced_new.xml
+lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/numeric_id_zero.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/ids_merged.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/big_cdata_attribute_merged.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/cdata_html.xml
+lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/numeric_id_zero_new.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/namespaced.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/text_node_new.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/no_ids.xml
@@ -38332,6 +38368,7 @@ lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/cdata_merged.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/ids.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/text_node_cdata.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/cdata_text_new.xml
+lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/numeric_id_zero_merged.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/ambiguous_two.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/recursive_deep.xml
 lib/internal/Magento/Framework/Config/Test/Unit/_files/dom/cdata_text.xml
@@ -39612,6 +39649,7 @@ lib/internal/Magento/Framework/Test/Unit/ArchiveTest.php
 lib/internal/Magento/Framework/Test/Unit/ShellTest.php
 lib/internal/Magento/Framework/Test/Unit/EventFactoryTest.php
 lib/internal/Magento/Framework/Reflection/MethodsMap.php
+lib/internal/Magento/Framework/Reflection/Api/PublicPropertySerializableInterface.php
 lib/internal/Magento/Framework/Reflection/TypeCaster.php
 lib/internal/Magento/Framework/Reflection/DataObjectProcessor.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/TestDataInterface.php
@@ -39620,9 +39658,11 @@ lib/internal/Magento/Framework/Reflection/Test/Unit/TestDataObjectWithUnstructur
 lib/internal/Magento/Framework/Reflection/Test/Unit/FieldNamerTest.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/NameFinderTest.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/AttributeTypeResolverTest.php
+lib/internal/Magento/Framework/Reflection/Test/Unit/TestDataObjectWithPublicProperties.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/ExtensionAttributesObject.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/TypeCasterTest.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/MethodsMapTest.php
+lib/internal/Magento/Framework/Reflection/Test/Unit/TestDataObjectWithGetterAndPublicProperty.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/TypeProcessorTest.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/ExtensionAttributesProcessorTest.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/DataObject.php
@@ -39637,9 +39677,11 @@ lib/internal/Magento/Framework/Reflection/Test/Unit/Fixture/UseSample.php
 lib/internal/Magento/Framework/Reflection/Test/Unit/TestDataObject.php
 lib/internal/Magento/Framework/Reflection/NameFinder.php
 lib/internal/Magento/Framework/Reflection/CustomAttributesProcessor.php
+lib/internal/Magento/Framework/Reflection/README.MD
 lib/internal/Magento/Framework/Reflection/TypeProcessor.php
 lib/internal/Magento/Framework/Reflection/FieldNamer.php
 lib/internal/Magento/Framework/Reflection/ExtensionAttributesProcessor.php
+lib/internal/Magento/Framework/Reflection/DataObject/PropertyMetadataProvider.php
 lib/internal/Magento/Framework/Reflection/AttributeTypeResolver.php
 lib/internal/Magento/Framework/Event/ManagerInterface.php
 lib/internal/Magento/Framework/Event/ObserverFactory.php
